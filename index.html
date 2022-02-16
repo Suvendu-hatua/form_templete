@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <div>
+            <form action="info:suvenduhatua01@gmail.com">
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="name">Name:</label> 
+                <div  class="field">
+                    <input class="item"  type="text" name="" placeholder="Enter Full Name" id="name" value="" required>
+                    <small id="nameError">error</small>
+                    <i id="validName" class="correct fas fa-check-circle"></i>
+                    <i id="InvalidName" class="wrong fas fa-exclamation-circle"></i>  
+                </div>
+                <label for="email">Email:</label>
+                <div class="field" >
+                    <input class="item" type="email" name="" placeholder="Abc@gmail.com" id="email" value="" required>
+                    <small id="emailError">error</small>
+                    <i id="validEmail"class="correct fas fa-check-circle"></i>
+                    <i id="InvalidEmail" class="wrong fas fa-exclamation-circle"></i>
+                </div>
+                <label for="phno">Mobile No:</label>
+                <div class="field" >
+                    <input class="item" type="number" name="" placeholder="Enter 10 digits number" id="phno" required>
+                    <small id="phError">error</small>
+                    <i id="validNo" class=" correct fas fa-check-circle"></i>
+                    <i id="InvalidNo" class=" wrong fas fa-exclamation-circle"></i>
+                </div>
+                <label for="gender">Gender:</label>
+                <div class="item">
+                  Male<input type="radio" name="Male" id="gender">
+                  Female<input type="radio" name="Male" id="gender">
+                </div>
+                <label for="date">Date:</label>
+                <div >
+                    <input class="item" type="date" name="" id="date" required>
+                </div>
+                <label for="address">Address:</label>
+                <div >
+                    <textarea class="item" name="" id="address" placeholder="Enter Your Address" cols="30" rows="2"></textarea>
+                </div>
+                <input type="checkbox" name="" id=""> <span>accept all our <a href="">Terms & Conditions</a></span>
+                <div>
+                    <button id="submit" class="btn">Submit Now</button>
+                    <!-- <input id="submit" class="btn" type="submit" value="Submit Now"> -->
+                    <input id="reset" class="btn" type="reset" value="Reset">
+                </div>
+                
+            </form>
+            
+        </div>
+    </div>
+ 
+    <div class="overlay">
+        <div class="pop heading">
+            <h2>Registration Form</h2>
+            <i id="cross" class="fas fa-times fa-2x"></i>
+        </div>
+        <i id="success" class="fas fa-badge-check fa-4x"></i>
+        <h3>Successfully submitted</h3>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

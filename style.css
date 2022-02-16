@@ -1,0 +1,155 @@
+body{
+    background-color: #EEF2FF;
+   
+}
+.main{
+    width: 35%;
+    border: 2px solid #8A39E1 ;
+    margin-top: 1%;
+    margin-left: 30%;
+    background-color: #F3F1F5 ;
+    visibility: visible;
+    /*  */
+}
+.main_pressed{
+    visibility: hidden;
+}
+.main p{
+    color: #00B4D8;
+}
+form{
+    padding:0 5% 2% 5%;
+}
+p{
+    font-weight: bold;
+}
+label{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+}
+.item{
+    margin-top: 3px;
+    border-radius: 4px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 100%;
+    background-color: #E8F6EF;
+}
+.field{
+    /* border: 2px solid; */
+   height: 60px;
+}
+hr{
+    background-color: #03045E;
+    height: 1.5px;
+}
+h2{
+    padding-left: 5%;
+    font-size: 2rem;
+    color: #F76E11;
+}
+.btn{
+    width: 100%;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+#submit{
+    background-color: #49FF00;
+    
+}
+#submit:hover{
+    background-color: #4E9F3D;
+}
+#reset{
+    background-color: #FFDEFA;
+}
+#reset:hover{
+    background-color: #FFA1C9;
+}
+span{
+    color: #19282F;
+    font-size: medium;
+}
+a{
+    font-family: 'Fira Sans', sans-serif;
+    color: #7900FF;
+}
+.overlay{
+    width: 35%;
+    text-align: center;
+    margin-left: 30%;
+    border: 2px solid brown;
+   position: absolute;
+   top: 30%;
+   background-color: #A3DA8D;
+   padding-bottom: 5%;
+   visibility:hidden;
+   z-index: -10;
+   transition: var(--trasition);
+}
+.pressed{
+    visibility: visible;
+    z-index: 10;
+
+}
+.overlay h2{
+    margin-top: 35px;
+    color:#FF0075;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration:underline;
+    /* background-color: #519259; */
+}
+.overlay h3{
+    font-size: 1.5rem;
+}
+    #cross{
+   position: absolute;
+   right: 2%;
+   top: 3%;
+}
+#cross:hover{
+    color: red;
+}
+#success{
+  color: green;
+}
+form i{
+    position: relative;
+    bottom: 42px;  
+    left: 93%; 
+     /* visibility: hidden;  */
+}
+small{
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  visibility: hidden;
+   margin-right: 500px;
+   color: red;
+}
+
+.fa-check-circle{
+
+    position: relative;
+    left:97%
+}
+.wrong{
+    color: #FF1700;
+    visibility: hidden;
+}
+.correct{
+    visibility: hidden;
+     color: #06FF00;
+}
+.validBorder{
+    border: 2px solid #06FF00 ;
+}
+.InvalidBorder{
+    border:2px solid #FF1700;
+}
